@@ -1,0 +1,21 @@
+problem1 
+
+#!/usr/bin/python3
+
+import numpy as np
+
+x=int(input("enter the no. of rows in a"))
+y=int(input("enetr the no. of columns in a"))
+z=int(input("enetr the no. of rows in b"))
+w=int(input("enter the no. of columns in b"))
+
+a=np.random.random((x,y))
+b=np.random.random((z,w))
+
+np.savetxt('a.txt',a)
+k=np.loadtxt('a.txt')
+np.savetxt('b.txt',b)
+p=np.loadtxt('b.txt')
+
+a
+b
