@@ -19,3 +19,12 @@ p=np.loadtxt('b.txt')
 
 a
 b
+
+
+
+
+problem2 
+import numpy as np
+x=np.arange(100,200,5)
+arr=x[0:16].reshape(8,2)
+print(arr)
