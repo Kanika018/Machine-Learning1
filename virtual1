@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+df=pd.read_csv('student_csv.csv')
+df.info()
+df
+plt.pie(df.iloc[1:,1],labels=df.iloc[1:,0])
+plt.legend()
+plt.show()
