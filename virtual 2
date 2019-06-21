@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df=pd.read_csv("bank.csv")
+df.head(5)
+plt.pie(df.iloc[0:6,3],labels=df.iloc[0:6,2])
+plt.show()
+plt.bar(df.iloc[0:5,2],df.iloc[0:5,8],label='details')
+plt.legend()
+plt.scatter(df.iloc[0:5,2],df.iloc[0:5,3],label='details')
+plt.grid(color='red')
+plt.plot(df.iloc[0:5,2],df.iloc[0:5,3],label='details')
+plt.grid(color='green')
+plt.bar(df.iloc[0:5,2],df.iloc[0:5,8],label='details')
+plt.plot(df.iloc[0:5,2],df.iloc[0:5,8],label='details')
+plt.grid(color='m')
+plt.hist(df.iloc[0:5,2])
+plt.hist2d(df.iloc[0:5,3],df.iloc[0:5,8],label='details')
