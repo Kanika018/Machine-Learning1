@@ -15,3 +15,6 @@ plt.plot(df.iloc[0:5,2],df.iloc[0:5,8],label='details')
 plt.grid(color='m')
 plt.hist(df.iloc[0:5,2])
 plt.hist2d(df.iloc[0:5,3],df.iloc[0:5,8],label='details')
+df.rename(columns={'Surname':'person_name'})
+df.columns = [col.upper() for col in df.columns]
+df
